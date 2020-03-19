@@ -32,7 +32,7 @@
 			// compute
 			$mac = $paymentRequest->getShaSign() ; 		// run HMAC hash
 			$data = $paymentRequest->getBfishCrypt();	// run Crypt & retrieve Data
-			$len = $paymentRequest->getLen();			// retrieve Crypt length
+			$len = $paymentRequest->getLen();		// retrieve Crypt length
 
 ### Fill your form
 
@@ -44,7 +44,7 @@
 				 "<input type=\"hidden\" name=\"CustomField1\" value=\"". $paymentRequest->getAmount()/100 . "\">" .
 				 "<input type=\"hidden\" name=\"CustomField2\" value=\"". $paymentRequest->getTransID() . "\">" .
 				 "<input type=\"hidden\" name=\"CustomField3\" value=\"". $Your_logo_img . "\">" .
-				 "<input type=\"hidden\" name=\"CustomField8\" value=\"". $Your_miscelaneous text . "\">" .
+				 "<input type=\"hidden\" name=\"CustomField8\" value=\"". $Your_miscellaneous text . "\">" .
 				 "<noscript><input type=\"submit\" name=\"Go\" value=\"Click to continue\"/></noscript> </form>" .
 				 "<script type=\"text/javascript\">document.redirectForm.submit(); </script>" .
 				 "</body></html>";
